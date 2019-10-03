@@ -9,4 +9,4 @@ Technology Stack:
 5) Logging - Log4j Framework
 6) Maven
 
-Note : While running angular project, use the command npm start
+Note : While running angular project, use the command npm start so that it will call the backend localhost
