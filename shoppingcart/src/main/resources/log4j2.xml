@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+	<Appenders><!--/services/collector/raw  -->
+		<!-- <SplunkHttp name="http-input"
+			url="http://localhost:8088"
+			token="8cd0f599-12b7-4566-9480-97d30d44b038" index="web_service_stop"
+			disableCertificateValidation="true">
+
+			<PatternLayout pattern="%m" />
+		</SplunkHttp> -->
+
+		<File name="MyFile" fileName="./logs/app.log">
+			<PatternLayout pattern="%d %p %C{1.} [%t] %m%n" />
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="MyFile" />
+			<!-- <AppenderRef ref="http-input" /> -->
+		</Root>
+	</Loggers>
+</Configuration>
