@@ -7,3 +7,6 @@ Technology Stack:
 3) Database - MySQL 
 4) Apache Tomcat server
 5) Logging - Log4j Framework
+6) Maven
+
+Note : While running angular project, use the command npm start
