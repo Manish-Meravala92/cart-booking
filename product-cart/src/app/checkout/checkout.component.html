@@ -1,0 +1,54 @@
+ <mat-toolbar class="results-tool">
+    <span>Cart Review</span>
+    <button class="spacer" mat-button (click)="logout()">Log Out</button>
+  </mat-toolbar>
+  <div class="checkout-form">
+    <span>Total Price for {{totalQuantity}} product : ${{totalPrice}}</span>
+  </div>
+<div class="checkout-form">
+  <form (ngSubmit)="order()">
+    <mat-toolbar class="results-tool">
+    <span>Shipping Details</span>
+  </mat-toolbar>
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="First Name" [formControl]="firstName" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Last Name" [formControl]="lastName" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Email Id" type="email" [formControl]="emailId" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Phone number" [formControl]="phone" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Address" type="textarea" [formControl]="address" required>
+    </mat-form-field>
+    <br><br>
+
+    <mat-toolbar class="results-tool">
+      <span>Payment Details</span>
+    </mat-toolbar>
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Card number" type="number" [formControl]="cardNo" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="Expiration Date" [formControl]="expDt" required>
+    </mat-form-field>
+
+    <mat-form-field class="checkout-field">
+      <input matInput placeholder="CVV" type="number" [formControl]="cvv" required>
+    </mat-form-field>
+
+    <div class="text-center py-4 mt-3">
+      <span><button class="btn btn-cyan" type="submit">Order</button>
+      </span>
+    </div>
+  </form>
+</div>

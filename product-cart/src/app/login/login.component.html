@@ -1,0 +1,17 @@
+<div class="login-form">
+	<form (ngSubmit)="onSubmit()">
+		<mat-form-field class="login-field">
+			<input matInput placeholder="Email Id" [formControl]="emailId" required>
+		</mat-form-field>
+
+		<mat-form-field class="login-field">
+			<input matInput placeholder="password" type="password" [formControl]="password" required>
+		</mat-form-field>
+
+		<div class="text-center py-4 mt-3">
+			<span><button class="btn btn-cyan" type="submit">Login</button>
+			</span>
+			<span><button class="btn btn-cyan spacer" type="button" [routerLink]="['/register']" >Sign Up</button></span>
+		</div>
+	</form>
+</div>

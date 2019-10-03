@@ -1,0 +1,29 @@
+<div class="register-form">
+	<form (ngSubmit)="onRegister()">
+    <mat-form-field class="register-field">
+      <input matInput placeholder="First Name" [formControl]="firstName" required>
+    </mat-form-field>
+
+    <mat-form-field class="register-field">
+      <input matInput placeholder="Last Name" [formControl]="lastName" required>
+    </mat-form-field>
+
+		<mat-form-field class="register-field">
+			<input matInput placeholder="Email Id" type="email" [formControl]="emailId" required >
+		</mat-form-field>
+
+		<mat-form-field class="register-field">
+			<input matInput placeholder="Password" type="password" [formControl]="password" required>
+    </mat-form-field>
+    
+    <mat-form-field class="register-field">
+      <input matInput placeholder="Confirm Password" type="password" [formControl]="pwdConfirm" required>
+    </mat-form-field>
+
+
+		<div class="text-center py-4 mt-3">
+			<span><button class="btn btn-cyan" type="submit">Register</button>
+			</span>
+		</div>
+	</form>
+</div>
