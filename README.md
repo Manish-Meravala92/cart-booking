@@ -11,4 +11,4 @@ Technology Stack:
 
 Note : 
 proxy.conf.json - While running angular project, use the command npm start so that it will call the backend localhost.
-application.properties - Database server entries
+application.properties - Database server configuration
